@@ -1,0 +1,13 @@
+#! Example Snowflake program
+  This example uses more of the language. !#
+parm  goat  cow;
+star = '#';
+mule = 'Embedded #! comment !# that is really a quote' #! before semi !# ;
+while goat cow  {           # repeat unless it can't find a cow
+    goat cow | mule = star;
+    star = star '#';        # example of concatenation
+    while 'stuff' mule {    # loop in a loop
+        mule = 'horse';
+    }
+}
+return goat;

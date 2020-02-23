@@ -1,0 +1,8 @@
+#! Example Snowflake program !#
+parm  goat  cow;
+star = '*';
+while goat cow  {        # repeat unless it can't find a cow
+    goat cow = star;
+    star = star '*';    # example of concatenation
+}
+return goat;
