@@ -1,5 +1,10 @@
 package snowflakeparser;
 
+/**
+ * Lexical scanner suitable for the Snowflake language.
+ * @author Ken Williams at North Carolina A&T State University February 6, 2020
+ */
+
 public class Token {
     
     
@@ -71,6 +76,11 @@ public class Token {
    
     public boolean isPunc() {
         return type == PUNCTUATION;
+    }
+    
+    
+    public boolean isSemiColon() {
+        return isPunc() && value.equalsIgnoreCase(";");
     }
     
     
